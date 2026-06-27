@@ -3,30 +3,16 @@
   "private": true,
   "workspaces": [
     "backend",
-    "admin/frontend",
-    "doctor/frontend",
-    "nurse/frontend",
-    "patient/frontend",
-    "reception/frontend",
-    "wardboy/frontend",
-    "pharmacy/frontend",
-    "ambulance/frontend",
+    "frontend",
     "packages/*"
   ],
   "scripts": {
     "start": "node run-all.js",
     "dev": "node run-all.js",
     "dev:backend": "npm run dev --workspace backend",
-    "install:all": "npm install --workspaces --if-present",
-    "dev:admin:fe": "npm run dev --workspace admin/frontend",
-    "dev:doctor:fe": "npm run dev --workspace doctor/frontend",
-    "dev:nurse:fe": "npm run dev --workspace nurse/frontend",
-    "dev:patient:fe": "npm run dev --workspace patient/frontend",
-    "dev:reception:fe": "npm run dev --workspace reception/frontend",
-    "dev:wardboy:fe": "npm run dev --workspace wardboy/frontend",
-    "dev:pharmacy:fe": "npm run dev --workspace pharmacy/frontend",
-    "dev:ambulance:fe": "npm run dev --workspace ambulance/frontend",
-    "build:all": "npm run build --workspaces --if-present"
+    "dev:frontend": "npm run dev --workspace novacare-admin",
+    "install:all": "npm install",
+    "build": "npm run build --workspace novacare-admin"
   },
   "dependencies": {
     "@react-oauth/google": "^0.13.5",
