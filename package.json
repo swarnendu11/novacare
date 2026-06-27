@@ -1,0 +1,37 @@
+{
+  "name": "novacare",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "admin/frontend",
+    "doctor/frontend",
+    "nurse/frontend",
+    "patient/frontend",
+    "reception/frontend",
+    "wardboy/frontend",
+    "pharmacy/frontend",
+    "ambulance/frontend",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "node run-all.js",
+    "dev": "node run-all.js",
+    "dev:backend": "npm run dev --workspace backend",
+    "install:all": "npm install --workspaces --if-present",
+    "dev:admin:fe": "npm run dev --workspace admin/frontend",
+    "dev:doctor:fe": "npm run dev --workspace doctor/frontend",
+    "dev:nurse:fe": "npm run dev --workspace nurse/frontend",
+    "dev:patient:fe": "npm run dev --workspace patient/frontend",
+    "dev:reception:fe": "npm run dev --workspace reception/frontend",
+    "dev:wardboy:fe": "npm run dev --workspace wardboy/frontend",
+    "dev:pharmacy:fe": "npm run dev --workspace pharmacy/frontend",
+    "dev:ambulance:fe": "npm run dev --workspace ambulance/frontend",
+    "build:all": "npm run build --workspaces --if-present"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.13.5",
+    "@tanstack/react-query": "^5.95.2",
+    "axios": "^1.16.1",
+    "zustand": "^5.0.12"
+  }
+}
