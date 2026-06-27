@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaCare Brand Kit</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
+      header {
+        background: #fff;
+        padding: 60px 20px;
+        text-align: center;
+        border-bottom: 1px solid #e2e8f0;
+      }
+      header h1 {
+        margin: 0 0 10px;
+        font-size: 32px;
+        font-weight: 700;
+        background: linear-gradient(to right, #3b82f6, #14b8a6);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      header p {
+        margin: 0;
+        color: #64748b;
+        font-size: 18px;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+      }
+      .card-dark {
+        background: #0f172a;
+        border-color: #1e293b;
+        color: #fff;
+      }
+      .card-header {
+        padding: 20px;
+        border-bottom: 1px solid #e2e8f0;
+        font-weight: 600;
+        color: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card-dark .card-header {
+        border-bottom-color: #1e293b;
+      }
+      .badge {
+        background: #e0f2fe;
+        color: #0369a1;
+        padding: 4px 10px;
+        border-radius: 99px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .card-dark .badge {
+        background: #0c4a6e;
+        color: #7dd3fc;
+      }
+      .preview {
+        padding: 80px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .checkered {
+        background-image:
+          linear-gradient(45deg, #f1f5f9 25%, transparent 25%),
+          linear-gradient(-45deg, #f1f5f9 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #f1f5f9 75%),
+          linear-gradient(-45deg, transparent 75%, #f1f5f9 75%);
+        background-size: 20px 20px;
+        background-position:
+          0 0,
+          0 10px,
+          10px -10px,
+          -10px 0px;
+      }
+      .checkered-dark {
+        background-image:
+          linear-gradient(45deg, #1e293b 25%, transparent 25%),
+          linear-gradient(-45deg, #1e293b 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #1e293b 75%),
+          linear-gradient(-45deg, transparent 75%, #1e293b 75%);
+        background-size: 20px 20px;
+        background-position:
+          0 0,
+          0 10px,
+          10px -10px,
+          -10px 0px;
+      }
+      .actions {
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #e2e8f0;
+        background: #f8fafc;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .card-dark .actions {
+        border-top-color: #1e293b;
+        background: #020617;
+      }
+      button {
+        background: #3b82f6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+        font-family: inherit;
+        font-size: 14px;
+      }
+      button:hover {
+        background: #2563eb;
+      }
+      button.secondary {
+        background: #e2e8f0;
+        color: #0f172a;
+      }
+      button.secondary:hover {
+        background: #cbd5e1;
+      }
+      .card-dark button.secondary {
+        background: #1e293b;
+        color: #f8fafc;
+      }
+      .card-dark button.secondary:hover {
+        background: #334155;
+      }
+      .info-panel {
+        background: #eff6ff;
+        border-left: 4px solid #3b82f6;
+        padding: 20px;
+        border-radius: 0 8px 8px 0;
+        margin-bottom: 20px;
+        color: #1e3a8a;
+      }
+      .info-panel strong {
+        font-weight: 700;
+      }
+      .info-panel ul {
+        margin: 10px 0 0;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>NovaCare</h1>
+      <p>Premium Digital Healthcare Brand Assets</p>
+    </header>
+    <div class="container">
+      <div class="info-panel">
+        <strong>About these Vector Graphics (SVG vs PNG)</strong>
+        <ul>
+          <li>
+            <strong>Vector Sharpness:</strong> SVG is an industry standard
+            modern format that scales to any size perfectly without pixelating,
+            making it drastically superior for web app Navbars.
+          </li>
+          <li>
+            <strong>Resolution Independent:</strong> While PNGs get blurry on
+            high resolution (Retina) mobile screens, SVGs remain 100% crisp.
+          </li>
+          <li>
+            <strong>Usage:</strong> For standard usage in a website/app, utilize
+            the SVG file. To export a PNG right now, click "Download PNG" which
+            uses your browser to render the exact pixel-perfect version.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Light Mode Card -->
+      <div class="card">
+        <div class="card-header">
+          <span>Light Theme (Standard)</span>
+          <span class="badge">Horizontal Navbar</span>
+        </div>
+        <div class="preview checkered">
+          <img src="logo-light.svg" alt="NovaCare Light" id="img-light" />
+        </div>
+        <div class="actions">
+          <button
+            onclick="downloadResource('logo-light.svg', 'logo-light.svg')"
+          >
+            Download SVG
+          </button>
+          <button
+            class="secondary"
+            onclick="exportPNG('logo-light.svg', 'novacare-logo-light.png')"
+          >
+            Export as PNG
+          </button>
+        </div>
+      </div>
+
+      <!-- Dark Mode Card -->
+      <div class="card card-dark">
+        <div class="card-header">
+          <span>Dark Theme (Night Mode)</span>
+          <span class="badge">Horizontal Navbar</span>
+        </div>
+        <div class="preview checkered-dark">
+          <img src="logo-dark.svg" alt="NovaCare Dark" id="img-dark" />
+        </div>
+        <div class="actions">
+          <button onclick="downloadResource('logo-dark.svg', 'logo-dark.svg')">
+            Download SVG
+          </button>
+          <button
+            class="secondary"
+            onclick="exportPNG('logo-dark.svg', 'novacare-logo-dark.png')"
+          >
+            Export as PNG
+          </button>
+        </div>
+      </div>
+
+      <!-- Icon Only -->
+      <div class="card">
+        <div class="card-header">
+          <span>Medical Brand Icon</span>
+          <span class="badge">Square Favicon</span>
+        </div>
+        <div class="preview checkered">
+          <img src="logo-icon.svg" alt="NovaCare Icon" id="img-icon" />
+        </div>
+        <div class="actions">
+          <button onclick="downloadResource('logo-icon.svg', 'logo-icon.svg')">
+            Download SVG
+          </button>
+          <button
+            class="secondary"
+            onclick="exportPNG('logo-icon.svg', 'novacare-icon.png')"
+          >
+            Export as PNG
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function downloadResource(url, filename) {
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      function exportPNG(svgUrl, filename) {
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        img.onload = function () {
+          // High-res export (3x scale) for stunning PNG clarity
+          const scale = 3;
+          let canvas = document.createElement("canvas");
+          canvas.width = img.width * scale;
+          canvas.height = img.height * scale;
+          let ctx = canvas.getContext("2d");
+
+          // Draw image nicely
+          ctx.scale(scale, scale);
+          ctx.drawImage(img, 0, 0);
+
+          // Export
+          const dataUrl = canvas.toDataURL("image/png");
+          const link = document.createElement("a");
+          link.download = filename;
+          link.href = dataUrl;
+          link.click();
+        };
+        img.src = svgUrl;
+      }
+    </script>
+  </body>
+</html>

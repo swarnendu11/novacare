@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <mask id="starMask">
+      <rect x="0" y="0" width="48" height="48" fill="white" />
+      <path d="M24,14 Q24,24 34,24 Q24,24 24,34 Q24,24 14,24 Q24,24 24,14 Z" fill="black" />
+    </mask>
+  </defs>
+
+  <g mask="url(#starMask)">
+    <rect x="18" y="8" width="12" height="32" rx="3" fill="url(#brandGradient)" />
+    <rect x="8" y="18" width="32" height="12" rx="3" fill="url(#brandGradient)" />
+  </g>
+</svg>
