@@ -108,7 +108,7 @@ const NurseMedication = lazy(() => import("./nurse/NurseMedication"));
 // ==========================================
 // Wardboy Pages
 // ==========================================
-const WardboyDashboard = lazy(() => import("./wardboy/WardboyDashboard"));
+const WardboyDashboard = lazy(() => import("./wardboy/WardBoyDashboard"));
 const WardBoyProfile = lazy(() => import("./wardboy/WardBoyProfile"));
 const WardBoyTasks = lazy(() => import("./wardboy/WardBoyTasks"));
 const PatientMovement = lazy(() => import("./wardboy/PatientMovement"));
